@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Farming Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #4a148c;
+    }
+
+    .card {
+      text-align: left;
+      padding: 20px;
+      border-radius: 8px;
+      min-height: 120px;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      border-left: 6px solid transparent;
+    }
+
+    .card-title {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .card-value {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #222;
+    }
+
+    /* Border colors */
+    .bg-kelembaban { border-left-color: #2196F3; }
+    .bg-tds        { border-left-color: #4CAF50; }
+    .bg-kekeruhan  { border-left-color: #03A9F4; }
+    .bg-temp-air   { border-left-color: #FF9800; }
+    .bg-aliran     { border-left-color: #F44336; }
+    .bg-oksigen    { border-left-color: #00BCD4; }
+    .bg-cahaya     { border-left-color: #FFC107; }
+    .bg-temp-udara { border-left-color: #9C27B0; }
+    .bg-ec         { border-left-color: #795548; }
+    .bg-ph         { border-left-color: #8BC34A; }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+    <h2 class="mb-4 text-center">Smart Farming</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+      <div class="col"><div class="card bg-kelembaban"><div class="card-title">KELEMBABAN (RH)</div><div class="card-value">54 %</div></div></div>
+      <div class="col"><div class="card bg-tds"><div class="card-title">TDS</div><div class="card-value">400 ppm</div></div></div>
+      <div class="col"><div class="card bg-kekeruhan"><div class="card-title">KEKERUHAN (TURBID)</div><div class="card-value">18 NTU</div></div></div>
+      <div class="col"><div class="card bg-temp-air"><div class="card-title">TEMPERATUR AIR (WTEMP)</div><div class="card-value">25 C</div></div></div>
+      <div class="col"><div class="card bg-aliran"><div class="card-title">ALIRAN AIR (WFLOW)</div><div class="card-value">34</div></div></div>
+      <div class="col"><div class="card bg-oksigen"><div class="card-title">OKSIGEN TERLARUT (DISS.OXYGEN)</div><div class="card-value">10 ppm</div></div></div>
+      <div class="col"><div class="card bg-cahaya"><div class="card-title">INTENSITAS CAHAYA (LUX)</div><div class="card-value">100 Lux</div></div></div>
+      <div class="col"><div class="card bg-temp-udara"><div class="card-title">TEMPERATUR UDARA (AMTEMP)</div><div class="card-value">34 C</div></div></div>
+      <div class="col"><div class="card bg-ec"><div class="card-title">EC</div><div class="card-value">2</div></div></div>
+      <div class="col"><div class="card bg-ph"><div class="card-title">PH</div><div class="card-value">7.1</div></div></div>
+
+    </div>
+  </div>
+
+  <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
